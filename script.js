@@ -13,7 +13,7 @@ const sexo1 = "Fêmea";
 let idade1 = 3;
 let estaCastrado1 = false;
 let anosNaOng1 = [2021, 2022];
-let caracteristicas1 = ["educada", "carinhosa", "dócil"];
+let caracteristicas1 = ["educada", " carinhosa", " dócil"];
 
 
 const nome2 = "Shay";
@@ -21,7 +21,7 @@ const sexo2 = "Fêmea";
 let idade2 = 9;
 let estaCastrado2 = true;
 let anosNaOng2 = [2018, 2019, 2020, 2021, 2022];
-let caracteristicas2 = ["mansa", "tranquila", "gosta de outros cachorros"];
+let caracteristicas2 = ["mansa", " tranquila", " gosta de outros cachorros"];
 
 
 const nome3 = "Antonio";
@@ -29,23 +29,29 @@ const sexo3 = "Macho";
 let idade3 = 1;
 let estaCastrado3 = true;
 let anosNaOng3 = [2022];
-let caracteristicas3 = ["brincalhão", "carinhoso", "late muito"];
+let caracteristicas3 = ["Brincalhão", " tem muita energia", " gosta de crianças"];
 
 const nome4 = "Cacau";
 const sexo4 = "Fêmea";
 let idade4 = 5;
 let estaCastrado4 = true;
 let anosNaOng4 = [2021, 2022];
-let caracteristicas4 = ["brincalhona", "carinhosa", "adora brinquedo"];
+let caracteristicas4 = ["Brincalhona", " carinhosa", " adora brinquedo"];
 
+const nome5 = "Luiza";
+const sexo5 = "Fêmea";
+let idade5 = 2;
+let estaCastrado5 = true;
+let anosNaOng5 = [2022];
+let caracteristicas5 = ["Sociável", " carinhosa", " mansa"];
 
 // Parte 1.3
-const mediaIdadeAnimais = Number(idade1 + idade2 + idade3 + idade4) / 4
+const mediaIdadeAnimais = Number(idade1 + idade2 + idade3 + idade4 + idade5) / 5
 console.log("A média da idade dos cachorros é:", mediaIdadeAnimais, "anos")
 console.log("------------------------------------------");
 
 //Parte 1.4
-const verificaCastracao = ((estaCastrado1 && estaCastrado2 && estaCastrado3 && estaCastrado4) === true)
+const verificaCastracao = ((estaCastrado1 && estaCastrado2 && estaCastrado3 && estaCastrado4 && estaCastrado5) === true)
 console.log("Todos os cachorros estão castrados?", verificaCastracao)
 
 console.log("------------------------------------------");
@@ -75,7 +81,6 @@ for (let i = 0; i < caracteristicas2.length; i++) {
     caracteristicasMaiusculo2 += `${caracteristicas2[i].toUpperCase()} `;
 }
 console.log(`Características: ${caracteristicasMaiusculo2}`);
-
 console.log("------------------------------------------");
 
 console.log(`Nome: ${nome3.toUpperCase()}`);
@@ -88,8 +93,8 @@ for (let i = 0; i < caracteristicas3.length; i++) {
     caracteristicasMaiusculo3 += `${caracteristicas3[i].toUpperCase()} `;
 }
 console.log(`Características: ${caracteristicasMaiusculo3}`);
-
 console.log("------------------------------------------");
+
 console.log(`Nome: ${nome4.toUpperCase()}`);
 console.log(`Sexo: ${sexo4}`);
 console.log(`Idade: ${idade4}`);
@@ -100,7 +105,18 @@ for (let i = 0; i < caracteristicas4.length; i++) {
     caracteristicasMaiusculo4 += `${caracteristicas4[i].toUpperCase()} `;
 }
 console.log(`Características: ${caracteristicasMaiusculo4}`);
+console.log("------------------------------------------");
 
+console.log(`Nome: ${nome5.toUpperCase()}`);
+console.log(`Sexo: ${sexo5}`);
+console.log(`Idade: ${idade5}`);
+console.log(`Está castrado? ${estaCastrado5}`);
+console.log(`Anos na ONG: ${anosNaOng5}`);
+let caracteristicasMaiusculo5 = "";
+for (let i = 0; i < caracteristicas5.length; i++) {
+    caracteristicasMaiusculo5 += `${caracteristicas5[i].toUpperCase()} `;
+}
+console.log(`Características: ${caracteristicasMaiusculo5}`);
 console.log("------------------------------------------");
 
 //----------------------------------------------------------------------
@@ -112,7 +128,7 @@ let cachorro1 = {
     idade: 3,
     estaCastrado: false,
     anosNaOng: [2021, 2022],
-    caracteristicas: ["Educada", "carinhosa", "dócil"],
+    caracteristicas: ["Educada", " carinhosa", " dócil"],
     imagem: "./ONG - alianca com a vida/Juliette1.jpg",
     link:"https://repositorio.ucs.br/xmlui/handle/11338/4970"
 }
@@ -123,7 +139,7 @@ let cachorro2 = {
     idade: 9,
     estaCastrado: true,
     anosNaOng: [2018, 2019, 2020, 2021, 2022],
-    caracteristicas: ["Mansa", "tranquila", "gosta de outros cachorros"],
+    caracteristicas: ["Mansa", " tranquila", " gosta de outros cachorros"],
     imagem: "./ONG - alianca com a vida/Shay1.jpg",
     link:"https://web.archive.org/web/20210711120758id_/http://www.pubvet.com.br/uploads/4cdf2aa245f029acdd9b7a582737ae1f.pdf"
 }
@@ -134,7 +150,7 @@ let cachorro3 = {
     idade: 1,
     estaCastrado: true,
     anosNaOng: [2022],
-    caracteristicas: ["Brincalhão", "carinhoso", "late muito"],
+    caracteristicas: ["Brincalhão", " tem muita energia", " gosta de crianças"],
     imagem:"./ONG - alianca com a vida/Antonio1.jpg",
     link:"https://www.researchgate.net/profile/Rafael-Duarte-Oliveira-Venancio/publication/316790067_Nao_abandone_adote_em_defesa_da_adocao_responsavel/links/5911d7beaca27200fe3b5eca/Nao-abandone-adote-em-defesa-da-adocao-responsavel.pdf"
 }
@@ -144,10 +160,23 @@ let cachorro4 = {
     idade: 5,
     estaCastrado: true,
     anosNaOng: [2021, 2022],
-    caracteristicas: ["Brincalhona", "carinhosa", "adora brinquedo"],
+    caracteristicas: ["Brincalhona", " carinhosa", " adora brinquedo"],
     imagem: "./ONG - alianca com a vida/Cacau1.jpg",
     link:"https://rsdjournal.org/index.php/rsd/article/view/14885"
 }
+
+let cachorro5 = {
+    nome: "Luiza",
+    sexo: "Fêmea",
+    idade: 2,
+    estaCastrado: true,
+    anosNaOng: [2022],
+    caracteristicas: ["Sociável", " carinhosa", " mansa"],
+    imagem: "./ONG - alianca com a vida/luiza.jpg",
+    link:"https://g1.globo.com/sp/bauru-marilia/especial-publicitario/special-dog-company/drive-pet/noticia/2021/10/05/voce-sabe-o-que-e-uma-adocao-responsavel.ghtml"
+}
+
+
 
 console.log("Parte 3.2 - array vazio")
 let cachorros = []
@@ -185,10 +214,17 @@ if (cachorro4.estaCastrado === true) {
     alert(`ALERTA!! Cachorro(a) ${cachorro4.nome} não foi adicionado(a) ao array pois não está castrado(a)`)
 }
 
+if (cachorro5.estaCastrado === true) {
+    cachorros.push(cachorro5)
+} else {
+    alert(`ALERTA!! Cachorro(a) ${cachorro5.nome} não foi adicionado(a) ao array pois não está castrado(a)`)
+}
+
 
 //parte opcional. Posso comentar depois
 console.log("Apenas os cachorros castrados:",cachorros)
 console.log("------------------------------------------");
+
 console.log("---PARTE 5.1 - REFATORANDO----");
 //----------------------------------------------------------------------
 
@@ -238,7 +274,7 @@ return cachorrosBuscar;
     alert("ALERTA!! NENHUM CACHORRO ENCONTRADO COM ESSE NOME.");
 }
 }
-console.log(buscarCachorros(cachorros, prompt("Digite o nome do cachorro que você quer buscar:")))
+// console.log(buscarCachorros(cachorros, prompt("Digite o nome do cachorro que você quer buscar:")))
 
 //Parte 11 e 12
 
